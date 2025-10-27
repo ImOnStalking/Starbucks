@@ -1,22 +1,22 @@
-.navbar-toggler {
+.btn {
     display: inline-block;
     padding: 10px 25px;
     border-radius: 25px;
     border: none;
-    background-color: #000000;
+    background-color: #006241;
     color: white;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
-.navbar-toggler:hover {
-    background-color: #ffffff;
+.btn:hover {
+    background-color: #004f35;
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.navbar-toggler:active {
+.btn:active {
     transform: translateY(0);
-    box-shadow: 0 2px 4px rgba(255, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
