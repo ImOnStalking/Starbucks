@@ -3,7 +3,7 @@
     padding: 10px 25px;
     border-radius: 25px;
     border: none;
-    background-color: #006241;
+    background-color: #000000;
     color: white;
     font-weight: bold;
     cursor: pointer;
@@ -11,12 +11,12 @@
 }
 
 .navbar-toggler:hover {
-    background-color: #004f35;
+    background-color: #ffffff;
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .navbar-toggler:active {
     transform: translateY(0);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(255, 0, 0, 0.1);
 }
