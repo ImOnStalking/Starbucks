@@ -1,32 +1,28 @@
-.btn{
 
-}
 
-/* Logo animation for navbar */
+/* Entrance animation when the page loads */
 .navbar-brand img{
 	display: inline-block;
 	transform-origin: center center;
-	transition: transform 300ms cubic-bezier(.2,.9,.2,1), filter 300ms ease;
-	animation: logo-pulse 6s ease-in-out infinite;
-	will-change: transform;
+	transition: transform 180ms ease, opacity 200ms ease;
+	animation: logo-fade-in 600ms ease both;
+	will-change: transform, opacity;
 }
 
-/* Hover: subtle tilt + scale and drop shadow; pause pulse while hovering */
+/* Hover: simple scale for a subtle interactive feel */
 .navbar-brand img:hover{
-	transform: rotate(-8deg) scale(1.08);
-	filter: drop-shadow(0 6px 10px rgba(0,0,0,0.35));
-	animation-play-state: paused;
+	transform: scale(1.12);
 }
 
-/* Focus/active for keyboard accessibility */
+/* Keyboard focus/active for accessibility */
 .navbar-brand:focus img,
 .navbar-brand:active img{
-	transform: scale(1.06);
+	transform: scale(1.08);
 	outline: none;
 }
 
-@keyframes logo-pulse{
-	0%{ transform: scale(1); }
-	50%{ transform: scale(1.03); }
-	100%{ transform: scale(1); }
+@keyframes logo-fade-in{
+    from{ opacity: 0; transform: translateY(-6px) scale(1); }
+    to{ opacity: 1; transform: translateY(0) scale(1); }
 }
+
