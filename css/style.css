@@ -1,0 +1,32 @@
+.btn{
+
+}
+
+/* Logo animation for navbar */
+.navbar-brand img{
+	display: inline-block;
+	transform-origin: center center;
+	transition: transform 300ms cubic-bezier(.2,.9,.2,1), filter 300ms ease;
+	animation: logo-pulse 6s ease-in-out infinite;
+	will-change: transform;
+}
+
+/* Hover: subtle tilt + scale and drop shadow; pause pulse while hovering */
+.navbar-brand img:hover{
+	transform: rotate(-8deg) scale(1.08);
+	filter: drop-shadow(0 6px 10px rgba(0,0,0,0.35));
+	animation-play-state: paused;
+}
+
+/* Focus/active for keyboard accessibility */
+.navbar-brand:focus img,
+.navbar-brand:active img{
+	transform: scale(1.06);
+	outline: none;
+}
+
+@keyframes logo-pulse{
+	0%{ transform: scale(1); }
+	50%{ transform: scale(1.03); }
+	100%{ transform: scale(1); }
+}
